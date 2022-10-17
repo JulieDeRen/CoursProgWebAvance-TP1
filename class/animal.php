@@ -1,6 +1,6 @@
 <?php
 
-class Animal {
+abstract class Animal {
     // portée protégée de la variable et méthodes publiques
     protected $type = "Cat"; 
 
