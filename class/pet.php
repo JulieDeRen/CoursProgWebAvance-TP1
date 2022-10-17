@@ -18,6 +18,7 @@ class Pet extends Animal {
         $age= $ageCalcul->format("%y ans, %m mois et %d jours");
         $this -> age = $age;
     }
+    // méthodes pour récupérer la valeur de la propriété retournée par la méthode
     public function getName(){
         return $this -> name;
     }

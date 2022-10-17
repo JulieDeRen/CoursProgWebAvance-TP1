@@ -4,7 +4,9 @@ require_once "class/pet.php";
 require_once "class/animal.php";
 require_once "class/owner.php";
 
-// méthod
+// Objet Owner 1
+// Création d'un nouvel objet propriétaires avec les valeurs de chacune de ses propriétés
+// Associer la valeur de chaque propriété à une variable qui sera passée dans la table html
 $owner1 = new Owner("Ginette Boivin", "4626 d'Orléans", "h1h1h1", "514-222-4444", "ginette@aimeleschats.com");
 $owner1_name = $owner1 -> getName();
 $owner1_address = $owner1 -> getAddress();
@@ -12,13 +14,18 @@ $owner1_zipcode = $owner1 -> getZipCode();
 $owner1_phone = $owner1 -> getPhone();
 $owner1_email = $owner1 -> getEmail();
 
-
+// Objet Pet 1
+// Création d'un nouvel objet pet avec les valeurs de chacune de ses propriétés
+// Associer la valeur de chaque propriété à une variable qui sera passée dans la table html
 $pet1 = new Pet("Cocorico", "17-02-2018", null);
 $pet1_name = $pet1 -> getName();
 $pet1_birthday = $pet1 -> getbirthday();
 $pet1_type = $pet1 -> getType();
 $pet1_age = $pet1 -> getAge();
 
+// Objet Owner 2
+// Création d'un nouvel objet propriétaires avec les valeurs de chacune de ses propriétés
+// Associer la valeur de chaque propriété à une variable qui sera passée dans la table html
 $owner2 = new Owner("Hubert Legrand", "2525 St-Denis", "h2h2h2", "514-221-4445", "hubert@aimeleschats.com");
 $owner2_name = $owner2 -> getName();
 $owner2_address = $owner2 -> getAddress();
@@ -26,7 +33,9 @@ $owner2_zipcode = $owner2 -> getZipCode();
 $owner2_phone = $owner2 -> getPhone();
 $owner2_email = $owner2 -> getEmail();
 
-
+// Objet Pet 2
+// Création d'un nouvel objet pet avec les valeurs de chacune de ses propriétés
+// Associer la valeur de chaque propriété à une variable qui sera passée dans la table html
 $pet2 = new Pet("Minou", "15-04-2015", null);
 $pet2_name = $pet2 -> getName();
 $pet2_birthday = $pet2 -> getbirthday();
@@ -47,7 +56,9 @@ $pet2_age = $pet2 -> getAge();
 <body>
     <nav class="navigation">
         <div class="logo"><img src="img/logo-clinique-vet.png" alt="logo"></div>
-        <a href="index.php">Registre complet</a><!-- Normalement cette page aurait une url registre.php-->
+        <!-- Normalement cette page aurait une autre url que index ex: registre.php-->
+        <!-- C'est plus simple a visualiser avec index plutôt que de cliquer sur un fichier du dossier de projet-->
+        <a href="index.php">Registre complet</a>
         <a href="#">Réservation</a>
         <a href="#">Modification rendez-vous</a>
         <a href="#">Horaire</a>

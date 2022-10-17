@@ -8,6 +8,7 @@ class Owner {
     private $phone;
     private $email;
 
+    // construction de l'objet avec toutes ses propriétés
     public function __construct($name, $address, $zipCode, $phone, $email){
         $this -> name = $name;
         $this -> address = $address;
@@ -15,7 +16,8 @@ class Owner {
         $this -> phone = $phone;
         $this -> email = $email;
     }
-
+    
+    // méthodes pour récupérer la valeur de la propriété retournée par la méthode
     public function getName(){
         return $this -> name;
     }
@@ -31,8 +33,6 @@ class Owner {
     public function getEmail(){
         return $this -> email;
     }
-
 }
-
 
 ?>
