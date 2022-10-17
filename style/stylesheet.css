@@ -5,12 +5,12 @@ html{
     margin-right: auto;
 }
 *{
-    margin-block-start: 0;
+    margin: 0;
 }
 body{
     margin-left: 40px;
     margin-right: 40px;
-    line-height: 15px;
+    line-height: 15px; 
     background-color: white;
 }
 *+*:not(.flexVertical):not(nav a):not(nav button):not(.button>input):not(.button):not(img):not(.titre){
